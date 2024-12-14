@@ -1,5 +1,6 @@
 package pet.store.entity;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import jakarta.persistence.CascadeType;
@@ -35,5 +36,5 @@ public class PetStore {
 	Set<Customer> customers;	
 	
 	@OneToMany(mappedBy = "petStore", cascade = CascadeType.ALL, orphanRemoval = true)
-	Set<Employee> employees;
+	Set<Employee> employees = new HashSet<>();
 }

@@ -24,11 +24,11 @@ public class PetStoreService {
 	}
 
 	private void copyPetStoreFields(PetStore petStore, PetStoreData petStoreData) {
+		petStore.setPetStoreAddress(petStoreData.getPetStoreAddress());
+		petStore.setPetStoreCity(petStoreData.getPetStoreCity());
 		petStore.setPetStoreId(petStoreData.getPetStoreId());
 		petStore.setPetStoreName(petStoreData.getPetStoreName());
 		petStore.setPetStorePhone(petStoreData.getPetStorePhone());
-		petStore.setPetStoreAddress(petStoreData.getPetStoreAddress());
-		petStore.setPetStoreCity(petStoreData.getPetStoreCity());
 		petStore.setPetStoreState(petStoreData.getPetStoreState());
 		petStore.setPetStoreZip(petStoreData.getPetStoreZip());
 	}
