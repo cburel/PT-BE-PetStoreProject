@@ -28,6 +28,7 @@ public class PetStoreData {
 	
 	public PetStoreData(PetStore petStore) {
 		petStoreId = petStore.getPetStoreId();
+		petStoreName = petStore.getPetStoreName();
 		petStoreAddress = petStore.getPetStoreAddress();
 		petStoreCity = petStore.getPetStoreCity();
 		petStoreState = petStore.getPetStoreState();
