@@ -62,13 +62,13 @@ public class PetStoreController {
 		return petStoreService.retrieveAllPetStores();
 	}
 	
-	@GetMapping("/petStoreId")
+	@GetMapping("/{petStoreId}")
 	public PetStoreData getPetStoreById(@PathVariable Long petStoreId) {
 		log.info("Retrieving pet store with ID={}", petStoreId);
 		return petStoreService.getPetStoreById(petStoreId);
 	}
 	
-	@DeleteMapping("/petStoreId")
+	@DeleteMapping("/{petStoreId}")
 	public Map<String, String> deletePetStoreById(@PathVariable Long petStoreId){
 		log.info("Deleting pet store with ID={}", petStoreId);
 		petStoreService.deletePetStoreById(petStoreId);
